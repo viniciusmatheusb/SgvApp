@@ -40,7 +40,7 @@ class LoginPge extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(Icons.copyright),
-            Text('Sesc TO - Desenvolvido pela ASTI'),
+            Text('Desenvolvido por VM Tecnologia'),
           ],
         ),
       ),

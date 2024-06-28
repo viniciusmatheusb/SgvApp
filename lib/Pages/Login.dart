@@ -11,16 +11,17 @@ class LoginPage extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Container(
+        ClipRRect(
+          borderRadius: BorderRadius.circular(100),
           child: Image.asset(
             'assets/usuario.png',
-            width: 100,
-            height: 100,
+            width: 120,
+            height: 120,
+            fit: BoxFit.cover,
           ),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(50),
-            color: Colors.black,
-          ),
+        ),
+        const SizedBox(
+          height: 20,
         ),
         const Padding(
           padding: EdgeInsets.all(8.0),
@@ -44,17 +45,17 @@ class LoginPage extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8.0),
           child: ElevatedButton(
             onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => AgendasPage(),
+                  builder: (context) => const AgendasPage(),
                 ),
               );
             },
-            child: Text('Entrar'),
+            child: const Text('Entrar'),
           ),
         ),
       ],
